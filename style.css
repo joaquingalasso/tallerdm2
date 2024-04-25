@@ -2,4 +2,11 @@ body {
     background: radial-gradient(circle, #ffbbbb 10%, transparent 11%),radial-gradient(circle at bottom left, #bbdbff 5%, transparent 6%),radial-gradient(circle at bottom right, #bbdbff 5%, transparent 6%),radial-gradient(circle at top left, #bbdbff 5%, transparent 6%),radial-gradient(circle at top right, #bbdbff 5%, transparent 6%);
         background-size: 3em 3em;
         background-color: #ffffff;
+        text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+	body {
+	margin-left: 25%;
+    margin-right: 25%;
+}
 }
