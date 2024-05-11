@@ -1,9 +1,18 @@
+:root {
+--dominante-n: #1F1F1F;
+--subordinado-b: #FFFFFF;
+--subordinado-g: #d8d8d8;	
+--acento-az: #68bbe8;
+--acento-ro: #ee5d52;
+--acento-am: #eede52;	
+}
+
 /* General Styles */
 body {
     font-family: 'Overpass Mono', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d8d8d8;
+    background-color: var(--subordinado-b);
   }
   
   a {
@@ -141,4 +150,5 @@ align-items: center;
   .social-media-container img {
     width: 32px;
     height: 32px;
-  }
+  }.por-que-unirte {
+}
