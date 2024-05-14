@@ -7,6 +7,10 @@
   --acento-am: #eede52;
 }
 
+text {
+  color: var(--dominante-n);
+}
+
 @font-face {
   font-family: "Overpass Mono";
   src: url("../data/OverpassMono-VariableFont_wght.ttf") format("truetype"); /* Variable font */
@@ -90,8 +94,8 @@ img {
 
 .divisor {
   background-image: url(/images/divisor.png);
-  -webkit-background-position: center bottom;
-  background-position: center bottom;
+  -webkit-background-position: left bottom;
+  background-position: left bottom;
   background-repeat: repeat-x;
   display: block;
   height: 12px;
@@ -129,6 +133,7 @@ img {
 
 /* Header Styles */
 header {
+  position:relative;
 }
 
 nav {
@@ -141,7 +146,7 @@ nav {
 }
 
 #hero-background {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
