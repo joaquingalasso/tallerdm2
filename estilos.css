@@ -99,6 +99,11 @@ text {
     display: none !important;
   }
 
+  .hero-image {
+    background-image: none !important;
+    background-size: cover !important;
+  }
+
   .primera {
     /* background-color: var(--subordinado-b); */
     background-image: url(images/fondo-primera-mobile.jpg) !important;
@@ -288,12 +293,12 @@ nav {
 
 .hero-image {
   background-image: url(images/hero-desktop.png);
-  background-size: contain;
 }
 
 .hero {
   text-align: center;
   color: var(--subordinado-b);
+  justify-items: center;
 }
 
 .hero h1 {
