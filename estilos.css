@@ -113,6 +113,15 @@ text {
     background-image: url(images/fondo-primera-mobile.jpg) !important;
     background-size: contain;
   }
+  .segunda {
+    background-image: url(images/fondo-segunda-mobile.jpg) !important;
+  }
+  .tercera {
+    background-image: url(images/fondo-tercera-mobile.jpg) !important;
+  }
+  .cuarta {
+    background-image: url(images/fondo-cuarta-mobile.jpg) !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -319,6 +328,18 @@ nav {
 .primera {
   /* background-color: var(--subordinado-b); */
   background-image: url(images/fondo-primera-desktop.jpg);
+}
+
+.segunda {
+  background-image: url(images/fondo-segunda-desktop.jpg);
+  color: var(--subordinado-b);
+}
+
+.tercera {
+  background-image: url(images/fondo-tercera-desktop.jpg);
+}
+.cuarta {
+  background-image: url(images/fondo-cuarta-desktop.jpg);
 }
 
 .background-contain {
