@@ -68,6 +68,11 @@ text {
   margin-right: 5rem;
 }
 
+.espaciado-card {
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
 /* Media query para mobile */
 @media (max-width: 768px) {
   .grid-container {
@@ -92,6 +97,12 @@ text {
 
   .none-mobile {
     display: none !important;
+  }
+
+  .primera {
+    /* background-color: var(--subordinado-b); */
+    background-position: top !important;
+    background-image: url(images/fondo-primera-mobile.jpg) !important;
   }
 }
 
@@ -119,7 +130,7 @@ img {
 }
 
 .divisor {
-  background-image: url(/images/divisor.png);
+  background-image: url(/images/divisor.svg);
   -webkit-background-position: left bottom;
   background-position: left bottom;
   background-repeat: repeat-x;
@@ -137,6 +148,10 @@ img {
 
 .justify-space-between {
   justify-content: space-between;
+}
+
+.justify-space-left {
+  justify-content: left;
 }
 
 .align-items-center {
@@ -204,6 +219,11 @@ img {
   flex-grow: 1;
   flex-shrink: 0;
   border-radius: 0 0.3125rem 0 0;
+}
+
+.prioridad-fill {
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .text-badge h4 {
@@ -283,7 +303,9 @@ nav {
 }
 
 .primera {
-  background-color: var(--subordinado-b);
+  /* background-color: var(--subordinado-b); */
+  background-position: center;
+  background-image: url(images/fondo-primera-desktop.jpg);
 }
 
 /* Main Styles */
