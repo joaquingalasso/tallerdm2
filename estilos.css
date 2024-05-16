@@ -101,8 +101,8 @@ text {
 
   .primera {
     /* background-color: var(--subordinado-b); */
-    background-position: top !important;
     background-image: url(images/fondo-primera-mobile.jpg) !important;
+    background-size: contain;
   }
 }
 
@@ -286,6 +286,11 @@ nav {
   z-index: -999;
 }
 
+.hero-image {
+  background-image: url(images/hero-desktop.png);
+  background-size: contain;
+}
+
 .hero {
   text-align: center;
   color: var(--subordinado-b);
@@ -304,8 +309,11 @@ nav {
 
 .primera {
   /* background-color: var(--subordinado-b); */
-  background-position: center;
   background-image: url(images/fondo-primera-desktop.jpg);
+}
+
+.background-contain {
+  background-size: contain;
 }
 
 /* Main Styles */
