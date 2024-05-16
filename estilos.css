@@ -340,6 +340,7 @@ nav {
 }
 .cuarta {
   background-image: url(images/fondo-cuarta-desktop.jpg);
+  background-position: bottom;
 }
 
 .background-contain {

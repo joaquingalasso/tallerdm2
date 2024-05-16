@@ -308,33 +308,43 @@
       </section>
 
       <section class="cuarta background-contain">
-        <h2>¡Unite ahora!</h2>
-        <form action="#">
-          <label for="name">Nombre:</label>
-          <input type="text" id="nombre" name="name" required />
-          <br />
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="interests">Intereses:</label>
-          <br />
-          <label for="libros">Libros</label>
-          <input type="checkbox" name="libros" value="Libros" />
-          <br />
-          <label for="articulos">Artículos</label>
-          <input type="checkbox" name="articulos" value="Artículos" />
-          <br />
-          <label for="podcasts">Podcasts</label>
-          <input type="checkbox" name="podcasts" value="Podcasts" />
-          <br />
-          <label for="experimentos">Experimentos</label>
-          <input type="checkbox" name="experimentos" value="Experimentos" />
-          <br />
-          <label for="tienda">Tienda</label>
-          <input type="checkbox" name="tienda" value="Tienda" />
-          <br />
-          <button type="submit" class="btn">Suscribirme</button>
-        </form>
+        <div class="grid-container" style="fle">
+          <h2>¡Unite ahora!</h2>
+          <form action="#">
+            <label for="name">Nombre:</label>
+            <input type="text" id="nombre" name="name" required />
+            <br />
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="interests">Intereses:</label>
+            <br />
+
+            <div
+              class="flex justify-space-between align-items-center"
+              style="
+                flex-wrap: wrap;
+              "
+            >
+              <label for="libros">Libros</label>
+              <input type="checkbox" name="libros" value="Libros" />
+
+              <label for="articulos">Artículos</label>
+              <input type="checkbox" name="articulos" value="Artículos" />
+
+              <label for="podcasts">Podcasts</label>
+              <input type="checkbox" name="podcasts" value="Podcasts" />
+
+              <label for="experimentos">Experimentos</label>
+              <input type="checkbox" name="experimentos" value="Experimentos" />
+
+              <label for="tienda">Tienda</label>
+              <input type="checkbox" name="tienda" value="Tienda" />
+            </div>
+              <button type="submit" class="btn">Suscribirme</button>
+            
+          </form>
+        </div>
       </section>
     </main>
     <br />
