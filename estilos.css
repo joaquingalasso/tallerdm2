@@ -99,6 +99,10 @@ text {
     display: none !important;
   }
 
+  .no-margin-top {
+    margin-top: 0;
+  }
+
   .hero-image {
     background-image: none !important;
     background-size: cover !important;
@@ -292,7 +296,7 @@ nav {
 }
 
 .hero-image {
-  background-image: url(images/hero-desktop.png);
+  background-image: none;
 }
 
 .hero {
