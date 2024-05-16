@@ -422,3 +422,34 @@ footer {
   width: 32px;
   height: 32px;
 }
+
+/* Formulario */
+
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: #999;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -1.5rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  color: #333;
+}
