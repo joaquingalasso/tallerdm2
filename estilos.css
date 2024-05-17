@@ -168,8 +168,12 @@ img {
   justify-content: space-between;
 }
 
-.justify-space-left {
+.justify-content-left {
   justify-content: left;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 .align-items-center {
