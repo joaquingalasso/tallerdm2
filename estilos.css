@@ -347,8 +347,9 @@ nav {
   background-position: bottom;
 }
 
-.background-contain {
-  background-size: contain;
+.background-size {
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
 }
 
 /* Main Styles */
@@ -372,6 +373,14 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  fill: var(--icon-fill-color);
+}
+
+
+.icons:hover {
+  fill: none;
+  stroke: var(--icon-fill-color);
+  stroke-width: 1; /* Ajusta el grosor del borde según necesites */
 }
 
 .icons img {
