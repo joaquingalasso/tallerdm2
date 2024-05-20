@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#close').hide();
     // Cuando se envía el formulario
     $('#formulario').submit(function(e) {
         // Obtenemos los valores de los campos
@@ -11,7 +12,7 @@ $(document).ready(function() {
 
         // Muestra el mensaje y oculta el formulario
         $('.formMessage').show();
-        $('#formulario').hide();
+        // $('#formulario').hide();
 
         // Previene el envío tradicional del formulario
         e.preventDefault();
@@ -20,7 +21,7 @@ $(document).ready(function() {
     // Cuando se hace clic en el botón cerrar
     $("#close").click(function() {
         // Muestra el formulario y oculta el mensaje
-        $('#formulario').show();
+        // $('#formulario').show();
         $('.formMessage').hide();
 
         // Limpia los valores de los campos del formulario

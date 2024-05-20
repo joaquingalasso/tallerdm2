@@ -464,3 +464,12 @@ footer {
   font-size: 0.75rem;
   color: #333;
 }
+
+.modal {
+  background: green;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
