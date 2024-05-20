@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Gato y la Caja - Ciencia + Diseño</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
 
   <body>
@@ -20,7 +21,7 @@
           <ul>
             <li>
               <a href="https://www.instagram.com/" target="_blank">
-                <img src="icons/instagram.svg" alt="Instagram"/>
+                <img src="icons/instagram.svg" alt="Instagram" />
               </a>
             </li>
 
@@ -309,25 +310,35 @@
 
       <section class="cuarta background-size">
         <div class="grid-container">
-          <h2>¡Unite ahora!</h2>
-          <form action="#">
+          <h2>¡Únete ahora!</h2>
+          <form id="formulario" action="#">
             <div class="input-container">
-              <input type="text" id="nombre" name="name" required />
-              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="ingresa-nombre"
+                name="name"
+                placeholder="Nombre"
+                pattern="[^' ']+[A-Za-z]{3,12}"
+                title="Se requieren al menos 4 caracteres y no se permiten espacios."
+                required
+              />
             </div>
             <div class="input-container">
-              <input type="email" id="email" name="email" required />
-              <label for="email">Correo electrónico:</label>
+              <input
+                type="email"
+                id="ingresa-mail"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              />
             </div>
-          
+
             <label for="interests">Intereses:</label>
             <br />
 
             <div
               class="flex justify-space-between align-items-center"
-              style="
-                flex-wrap: wrap;
-              "
+              style="flex-wrap: wrap"
             >
               <label for="libros">Libros</label>
               <input type="checkbox" name="libros" value="Libros" />
@@ -344,9 +355,14 @@
               <label for="tienda">Tienda</label>
               <input type="checkbox" name="tienda" value="Tienda" />
             </div>
-              <button type="submit" class="btn">Unirme</button>
-            
+            <button type="submit" class="btn">Unirme</button>
           </form>
+
+          <div class="formMessage" style="display: none">
+            <!-- Agrega aquí el mensaje de confirmación o lo que desees mostrar -->
+          </div>
+
+          <button id="close">Cerrar</button>
         </div>
       </section>
     </main>
@@ -395,5 +411,6 @@
 
       <p>&copy; 2024 El Gato y la Caja. Todos los derechos reservados.</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
