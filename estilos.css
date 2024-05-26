@@ -75,6 +75,10 @@ text {
 
 /* Media query para mobile */
 @media (max-width: 768px) {
+  section {
+    padding-bottom: 120px !important;
+  }
+
   .grid-container {
     grid-template-columns: repeat(1, 1fr); /* 3 columnas para mobile */
     margin-left: 20px;
@@ -122,6 +126,9 @@ text {
   .cuarta {
     background-image: url(images/fondo-cuarta-mobile.jpg) !important;
   }
+  .intro-container h2 {
+    /* max-width: calc(100% - 11rem); */
+}
 }
 
 @media (min-width: 768px) {
@@ -135,6 +142,7 @@ body {
   font-family: "Overpass Mono", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--dominante-n);
 }
 
 a {
@@ -206,7 +214,8 @@ img {
   padding-left: 1em;
   flex-shrink: 0;
   flex-grow: 1;
-  flex-basis: fit-content;
+  inline-size: -moz-fit-content;
+  inline-size: fit-content;
 }
 
 .grid-container .text-container {
@@ -226,6 +235,7 @@ img {
   color: var(--subordinado-b);
   width: 120px;
   justify-content: center;
+  border-radius: 0.2000rem 0 0 0
 }
 
 .icon-badge h4 {
@@ -260,28 +270,48 @@ img {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--acento-ro);
-  color: var(--subordinado-b);
   font-size: 14px;
   cursor: pointer;
   border-radius: 5px;
   border-width: 3px;
   border-style: solid;
-  border-color: var(--acento-ro);
+  transition: background 0.3s ease;
+  color: var(--subordinado-b);
 }
 
 .btn:hover {
-  border-image: linear-gradient(
+      /* border-image: linear-gradient(
       to top,
       var(--acento-ro),
       var(--acento-az),
       var(--acento-am)
     )
-    15;
-  border-width: 3px;
-  border-style: solid;
-  background: none;
-  transition: background 0.3s ease;
+    15; */
+    background: none !important;
+}
+
+.btn.btn-ro {
+  background-color: var(--acento-ro);
+  border-color: var(--acento-ro);
+}
+
+.btn.btn-am {
+  background-color: var(--acento-am);
+  border-color: var(--acento-am);
+  color: var(--dominante-n);
+}
+
+.btn.btn-az {
+  background-color: var(--acento-az);
+  border-color: var(--acento-az);
+}
+
+.btn.btn-am:hover {
+  color: var(--subordinado-b);
+}
+
+.btn.btn-az:hover {
+  color: var(--dominante-n);
 }
 
 /* Header Styles */
@@ -350,6 +380,8 @@ nav {
 .background-size {
   background-repeat: no-repeat !important;
   background-size: 100% 100% !important;
+  overflow: hidden;
+  min-height: 6rem;
 }
 
 /* Main Styles */
@@ -373,14 +405,6 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  fill: var(--icon-fill-color);
-}
-
-
-.icons:hover {
-  fill: none;
-  stroke: var(--icon-fill-color);
-  stroke-width: 1; /* Ajusta el grosor del borde según necesites */
 }
 
 .icons img {
@@ -393,6 +417,10 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ gap: 1.25rem;
 }
 
 .logo-container {
@@ -409,37 +437,30 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.social-media-container ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.social-media-container li {
-  margin-right: 20px;
-}
-
-.social-media-container li a {
-  display: block;
-  width: 32px;
-  height: 32px;
+  flex-direction: row;
+  gap: 1.25rem;
 }
 
 .social-media-container img {
-  width: 32px;
-  height: 32px;
+  width: 31px;
+  height: 31px;
+}
+
+.flecha-seccion {
+  min-width: 37px;
+  min-height: 17px;
+}
+
+.flecha-numero {
+  max-width: 19px;
+  max-height: 16px;
 }
 
 /* Formulario */
 
-.input-container {
-  margin-bottom: 1rem;
+input {
+  border-radius: 5px;
+  padding-left: 10px;
 }
 
 .input-container input {
@@ -465,11 +486,38 @@ footer {
   color: #333;
 }
 
-.modal {
-  background: green;
-  position: absolute;
-  float: left;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
+/* MODAL STYLES
+-------------------------------*/
+.jw-modal {
+  /* modals are hidden by default */
+  display: none;
+
+  /* modal container fixed across whole screen */
+  position: fixed;
+  inset: 0;
+
+  /* z-index must be higher than everything else on the page */
+  z-index: 10000;
+  
+  /* semi-transparent black background exposed by padding */
+  background-color: rgba(0, 0, 0, .75);
+  padding: 40px;
+
+  /* enables scrolling for tall modals */
+  overflow: auto;
+}
+
+.jw-modal.open {
+  display: block;
+}
+
+.jw-modal-body {
+  padding: 20px;
+  background: #fff;
+}
+
+body.jw-modal-open {
+  /* body overflow is hidden to hide main scrollbar when modal window is open */
+  overflow: hidden;
 }

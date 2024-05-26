@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Gato y la Caja - Ciencia + Diseño</title>
     <link rel="stylesheet" href="estilos.css" />
-    <link rel="stylesheet" href="estilos.css" />
   </head>
 
   <body>
@@ -17,38 +16,46 @@
         <a href="#" class="flex justify-content-center align-items-center">
           <img src="images/lema.svg" alt="Lema: Ciencia + Diseño" />
         </a>
-        <div class="social-media-container none-mobile">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="icons/instagram.svg" alt="Instagram" />
-              </a>
-            </li>
+        <div class="social-media-container none-mobile flex-row">
+          <a
+            href="https://instagram.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/instagram.svg" alt="Instagram" />
+          </a>
 
-            <li>
-              <a href="https://www.twitch.com/" target="_blank">
-                <img src="icons/twitch.svg" alt="Twitch" />
-              </a>
-            </li>
+          <a
+            href="https://twitch.tv/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/twitch.svg" alt="Twitch" />
+          </a>
 
-            <li>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="icons/youtube.svg" alt="YouTube" />
-              </a>
-            </li>
+          <a
+            href="https://youtube.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/youtube.svg" alt="YouTube" />
+          </a>
 
-            <li>
-              <a href="https://twitter.com/?lang=en" target="_blank">
-                <img src="icons/twitter.svg" alt="Twitter" />
-              </a>
-            </li>
+          <a
+            href="https://twitter.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/twitter.svg" alt="Twitter" />
+          </a>
 
-            <li>
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="icons/facebook.svg" alt="Facebook" />
-              </a>
-            </li>
-          </ul>
+          <a
+            href="https://facebook.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/facebook.svg" alt="Facebook" />
+          </a>
         </div>
       </nav>
 
@@ -57,7 +64,7 @@
           src="images/gato-mobile.png"
           alt="Gato y Discord"
           class="none-desktop"
-          style="max-width: 115%"
+          style="max-width: 145%; transform: rotate(0deg); z-index: -1"
         />
         <div
           style="
@@ -69,17 +76,25 @@
         >
           <h1 class="no-margin-top">SÓLO IMAGINÁ UN LUGAR...<br /></h1>
           <h2>…en el que tengas todo a tu disposición.</h2>
-          <a href="#" class="btn">¡Quiero GATO en mi Discord!</a>
+          <a href="#" class="btn btn-ro text-container"
+            >¡Quiero GATO en mi Discord!</a
+          >
         </div>
         <img
           src="images/gato-desktop.png"
           alt="Gato y Discord"
           class="none-mobile"
-          style="max-width: 100%"
+          style="max-width: 100%; z-index: -1"
         />
       </section>
 
-      <video autoplay muted loop id="hero-background">
+      <video
+        autoplay
+        muted
+        loop
+        id="hero-background"
+        style="mix-blend-mode: luminosity"
+      >
         <source src="images/hero-background.mp4" type="video/mp4" />
       </video>
     </header>
@@ -89,17 +104,29 @@
         <div class="intro-container">
           <div class="flex justify-space-between">
             <h4>03/</h4>
-            <h4 class="text-right">— ¿Por qué? No hay por qué ;)</h4>
+            <h4 class="text-right" style="text-transform: uppercase">
+              — ¿Por qué? No hay por qué ;)
+            </h4>
           </div>
           <div>
             <div class="flex align-flex-end flex-row">
-              <img
-                src="icons/flecha-seccion.svg"
+              <svg
+                width="83"
+                height="29"
+                viewBox="0 0 83 29"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons flecha-seccion"
                 alt="Flecha de sección"
-                class="icons"
-              />
+              >
+                <path
+                  id="Vector"
+                  d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
+                  fill="var(--acento-ro)"
+                />
+              </svg>
               <h2>¿Por qué unirte?</h2>
-              <div class="divisor"></div>
+              <div class="divisor" style="background-image: url(images/divisor.svg);"></div>
             </div>
             <h3>
               Hay múltiples razones por las que nuestro servidor podría
@@ -226,93 +253,287 @@
       </section>
 
       <section class="segunda background-size">
-        <div class="text-container">
-          <h2>¿Qué ofrecemos?</h2>
-          <h3>Contenido gratuito, de calidad y para todxs ;)</h3>
-          <p>
-            En El Gato y la Caja vas a encontrar una amplia variedad de recursos
-            gratuitos:
-          </p>
-          <ul>
-            <img
-              src="images/icon-book.png"
-              alt="Icono de libro"
-              class="icons"
-            />
-            <li>
-              Libros: descargá libros electrónicos en PDF sobre diversos temas
-              sociales.
-            </li>
-            <img
-              src="images/icon-article.png"
-              alt="Icono de artículo"
-              class="icons"
-            />
-            <li>
-              Artículos: leé artículos de análisis, reportajes y entrevistas con
-              expertos.
-            </li>
-            <img
-              src="images/icon-podcast.png"
-              alt="Icono de podcast"
-              class="icons"
-            />
-            <li>
-              Podcasts: escuchá podcasts sobre temas de actualidad social y
-              cultural.
-            </li>
-            <img
-              src="images/icon-experiment.png"
-              alt="Icono de experimento"
-              class="icons"
-            />
-            <li>
-              Experimentos: participá en experimentos online y aprendé sobre
-              investigación social.
-            </li>
-            <img
-              src="images/icon-store.png"
-              alt="Icono de tienda"
-              class="icons"
-            />
-            <li>
-              Tienda: llevate un pedacito del proyecto a casa con nuestros
-              productos.
-            </li>
-          </ul>
+        <div class="intro-container">
+          <div class="flex justify-space-between">
+            <h4>02/</h4>
+            <h4 class="text-right" style="text-transform: uppercase">
+              — Contenido gratuito, de calidad y para todos ;)
+            </h4>
+          </div>
+          <div>
+            <div class="flex align-flex-end flex-row">
+              <svg
+                width="83"
+                height="29"
+                viewBox="0 0 83 29"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons flecha-seccion"
+                alt="Flecha de sección"
+              >
+                <path
+                  id="Vector"
+                  d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
+                  fill="var(--acento-am)"
+                />
+              </svg>
+              <h2>¿Qué ofrecemos?</h2>
+              <div class="divisor" style="background-image: url(images/divisor-am.svg);"></div>
+            </div>
+            <h3>Tenemos una inmensidad de recursos para brindarte:</h3>
+          </div>
         </div>
-        <a href="#" class="btn">Accedé a nuestros recursos</a>
+
+        <div class="grid-container">
+          <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+            <div class="flex justify-space-between flex-row">
+              <div class="icon-badge">
+                <h4>01</h4>
+                <img
+                  src="icons/flecha-numero.svg"
+                  alt="Flecha de número"
+                  class="flecha-numero"
+                />
+              </div>
+              <div class="text-badge" style="color: var(--dominante-n)">
+                <h4>Libros</h4>
+              </div>
+            </div>
+            <div
+              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+              style="color: var(--dominante-n)"
+            >
+              <ul>
+                <li>
+                  Descargá libros electrónicos en PDF sobre diversos tópicos
+                  súper interesantes.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="text-container background-size"
+            style="background-image: url(images/libros.jpg)"
+          ></div>
+
+          <div
+          class="text-container background-size none-mobile"
+          style="background-image: url(images/podcasts.jpg)"
+        ></div>
+
+          <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+            <div class="flex justify-space-between flex-row">
+              <div class="icon-badge">
+                <h4>02</h4>
+                <img
+                  src="icons/flecha-numero.svg"
+                  alt="Flecha de número"
+                  class="flecha-numero"
+                />
+              </div>
+              <div class="text-badge" style="color: var(--dominante-n)">
+                <h4>Podcasts</h4>
+              </div>
+            </div>
+            <div
+              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+              style="color: var(--dominante-n)"
+            >
+              <ul>
+                <li>
+                  Escuchá podcasts sobre temas de actualidad social y cultural.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+          class="text-container background-size none-desktop"
+          style="background-image: url(images/podcasts.jpg)"
+        ></div>
+
+        <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>03</h4>
+              <img
+                src="icons/flecha-numero.svg"
+                alt="Flecha de número"
+                class="flecha-numero"
+              />
+            </div>
+            <div class="text-badge" style="color: var(--dominante-n)">
+              <h4>Artículos</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+            style="color: var(--dominante-n)"
+          >
+            <ul>
+              <li>
+                Leé artículos de análisis, reportajes y entrevistas con expertos.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div
+        class="text-container background-size"
+        style="background-image: url(images/articulos.jpg)"
+        ></div>
+
+        <div
+class="text-container background-size none-mobile"
+style="background-image: url(images/experimentos.jpg)"
+></div>
+
+<div class="text-container" style="border: 1px solid var(--subordinado-b)">
+  <div class="flex justify-space-between flex-row">
+    <div class="icon-badge">
+      <h4>04</h4>
+      <img
+        src="icons/flecha-numero.svg"
+        alt="Flecha de número"
+        class="flecha-numero"
+      />
+    </div>
+    <div class="text-badge" style="color: var(--dominante-n)">
+      <h4>Experimentos</h4>
+    </div>
+  </div>
+  <div
+    class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+    style="color: var(--dominante-n)"
+  >
+    <ul>
+      <li>
+        Participá en experimentos online y aprendé sobre la investigación.
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div
+class="text-container background-size none-desktop"
+style="background-image: url(images/experimentos.jpg)"
+></div>
+
+
+<div class="text-container" style="border: 1px solid var(--subordinado-b)">
+  <div class="flex justify-space-between flex-row">
+    <div class="icon-badge">
+      <h4>05</h4>
+      <img
+        src="icons/flecha-numero.svg"
+        alt="Flecha de número"
+        class="flecha-numero"
+      />
+    </div>
+    <div class="text-badge" style="color: var(--dominante-n)">
+      <h4>Tienda</h4>
+    </div>
+  </div>
+  <div
+    class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+    style="color: var(--dominante-n)"
+  >
+    <ul>
+      <li>
+        Llevate un pedacito del proyecto a casa con nuestros productos.
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div
+class="text-container background-size"
+style="background-image: url(images/tienda.jpg)"
+></div>
+
+          <a
+            href="#"
+            class="btn btn-am text-container"
+            style="
+              text-align: center;
+              grid-column-end: -3;
+              grid-column-start: -1;
+            "
+            >¡Quiero GATO en mi Discord!</a
+          >
+        </div>
       </section>
 
       <section class="tercera background-size">
-        <div class="text-container">
-          <h2>¿Por qué unirte?</h2>
-          <h3 style="text-align: right">¿Por qué? No hay por qué ;)</h3>
-          <p>Al unirte a la comunidad de El Gato y la Caja, podrás:</p>
-          <ul>
-            <li>Acceder a contenido exclusivo para suscriptores.</li>
-            <li>Recibir un newsletter semanal con las últimas novedades.</li>
-            <li>Participar en foros y debates online.</li>
-            <li>
-              Conectar con otros jóvenes interesados en las ciencias y el
-              diseño.
-            </li>
-            <li>
-              Contribuir a un proyecto que promueve el conocimiento y la
-              transformación social.
-            </li>
-          </ul>
+        <div class="intro-container">
+          <div class="flex justify-space-between">
+            <h4>03/</h4>
+            <h4 class="text-right" style="text-transform: uppercase">
+              — ¿Por qué? No hay por qué ;)
+            </h4>
+          </div>
+          <div>
+            <div class="flex align-flex-end flex-row">
+              <svg
+                width="83"
+                height="29"
+                viewBox="0 0 83 29"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons flecha-seccion"
+                alt="Flecha de sección"
+              >
+                <path
+                  id="Vector"
+                  d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
+                  fill="var(--acento-az)"
+                />
+              </svg>
+              <h2>¿Por qué unirte?</h2>
+              <div class="divisor" style="background-image: url(images/divisor-az.svg);"></div>
+            </div>
+            <h3>
+              Hay múltiples razones por las que nuestro servidor podría
+              interesarte:
+            </h3>
+          </div>
         </div>
-        <img src="images/why-join-people.jpg" alt="Imagen" />
-        <br />
-        <a href="#" class="btn">¡Unite a la comunidad!</a>
+
+        <div class="grid-container">
+          <div class="text-container">
+            <div class="flex justify-space-between flex-row">
+              <div class="icon-badge">
+                <h4><3</h4>
+              </div>
+              <div class="text-badge">
+                <h4>Exclusividad</h4>
+              </div>
+            </div>
+            <div
+              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+            >
+              <img
+                src="icons/exclusividad.svg"
+                alt="Exclusividad"
+                class="content-icon"
+              />
+              <p>Accedé a contenido exclusivo para adscriptos.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="cuarta background-size">
         <div class="grid-container">
-          <h2>¡Únete ahora!</h2>
-          <form id="formulario" action="#">
-            <div class="input-container">
+          <h2>¡Unite ahora!</h2>
+          <form
+            id="formulario"
+            action="#"
+            class="text-container"
+            style="padding: 1rem; gap: 1rem;"
+          >
+            <div class="input-container flex justify-space-between flex-row">
               <input
                 type="text"
                 id="ingresa-nombre"
@@ -323,7 +544,7 @@
                 required
               />
             </div>
-            <div class="input-container">
+            <div class="input-container flex justify-space-between flex-row">
               <input
                 type="email"
                 id="ingresa-mail"
@@ -333,86 +554,132 @@
               />
             </div>
 
-            <label for="interests">Intereses:</label>
-            <br />
+            <div class="flex align-flex-end flex-row">
+            <label for="interests" class="prioridad-fill" style="inline-size: -moz-fit-content; inline-size: fit-content; ">Mis intereses</label>
+            <div class="divisor" style="margin: 0;
+            flex-shrink: 1;
+            flex-grow: 1; background-image: url(images/dividor-form.svg);"></div>
+            </div>
 
             <div
               class="flex justify-space-between align-items-center"
               style="flex-wrap: wrap"
             >
-              <label for="libros">Libros</label>
-              <input type="checkbox" name="libros" value="Libros" />
-
-              <label for="articulos">Artículos</label>
-              <input type="checkbox" name="articulos" value="Artículos" />
-
-              <label for="podcasts">Podcasts</label>
-              <input type="checkbox" name="podcasts" value="Podcasts" />
-
-              <label for="experimentos">Experimentos</label>
-              <input type="checkbox" name="experimentos" value="Experimentos" />
-
-              <label for="tienda">Tienda</label>
-              <input type="checkbox" name="tienda" value="Tienda" />
+              <div class="flex justify-space-between align-items-center">
+                <input type="checkbox" name="libros" value="Libros" />
+                <label for="libros">Libros</label>
+              </div>
+              <div class="flex justify-space-between align-items-center">
+                <input type="checkbox" name="articulos" value="Artículos" />
+                <label for="articulos">Artículos</label>
+              </div>
+              <div class="flex justify-space-between align-items-center">
+                <input type="checkbox" name="podcasts" value="Podcasts" />
+                <label for="podcasts">Podcasts</label>
+              </div>
+              <div class="flex justify-space-between align-items-center">
+                <input
+                  type="checkbox"
+                  name="experimentos"
+                  value="Experimentos"
+                />
+                <label for="experimentos">Experimentos</label>
+              </div>
+              <div class="flex justify-space-between align-items-center">
+                <input type="checkbox" name="tienda" value="Tienda" />
+                <label for="tienda">Tienda</label>
+              </div>
+              <div class="flex justify-space-between align-items-center">
+                <input type="checkbox" name="todo" value="Todo" />
+                <label for="todo">¡Todo!</label>
+              </div>
             </div>
-            <button type="submit" class="btn">Unirme</button>
+            <button
+              type="submit"
+              class="btn btn-az"
+              onclick="openModal('modal-1')"
+            >
+              Unirme
+            </button>
           </form>
 
-          <div class="formMessage" style="display: none">
-            <!-- Agrega aquí el mensaje de confirmación o lo que desees mostrar -->
-            <div class="modal">
-              Lorem ipsum
-              <button id="close">Cerrar</button>
+          <!-- FEEDBACK -->
+          <div id="modal-1" class="jw-modal">
+            <div class="jw-modal-body">
+              <h1>A custom modal popup</h1>
+              <button onclick="closeModal()">Close</button>
             </div>
           </div>
         </div>
-
       </section>
     </main>
     <footer>
       <div class="footer-container">
-        <div class="logo-container">
-          <img src="images/logo-completo.svg" alt="Logo" />
-        </div>
+        <div class="social-media-container none-mobile flex-row">
+          <a
+            href="https://instagram.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/instagram.svg" alt="Instagram" />
+          </a>
 
-        <div class="social-media-container">
-          <h3>¡Seguinos en nuestras redes!</h3>
+          <a
+            href="https://twitch.tv/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/twitch.svg" alt="Twitch" />
+          </a>
 
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="icons/instagram.svg" alt="Instagram" />
-              </a>
-            </li>
+          <a
+            href="https://youtube.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/youtube.svg" alt="YouTube" />
+          </a>
 
-            <li>
-              <a href="https://www.twitch.com/" target="_blank">
-                <img src="icons/twitch.svg" alt="Twitch" />
-              </a>
-            </li>
+          <a
+            href="https://twitter.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/twitter.svg" alt="Twitter" />
+          </a>
 
-            <li>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="icons/youtube.svg" alt="YouTube" />
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/?lang=en" target="_blank">
-                <img src="icons/twitter.svg" alt="Twitter" />
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="icons/facebook.svg" alt="Facebook" />
-              </a>
-            </li>
-          </ul>
+          <a
+            href="https://facebook.com/elgatoylacaja/"
+            target="_blank"
+            class="flex"
+          >
+            <img src="icons/facebook.svg" alt="Facebook" />
+          </a>
         </div>
       </div>
 
-      <p>&copy; 2024 El Gato y la Caja. Todos los derechos reservados.</p>
+      <div
+        class="flex justify-space-between flex-row"
+        style="
+          border-top: 1px solid;
+          stroke: #e5e7eb;
+          gap: 2.5rem;
+          padding-top: 1.5rem;
+        "
+      >
+        <a href="#" class="flex justify-content-center align-items-center">
+          <img src="images/logo-completo.svg" alt="Logo: El Gato y la Caja" />
+        </a>
+        <p class="flex justify-content-center align-items-center none-mobile">
+          &copy; 2024 El Gato y la Caja. Todos los derechos reservados.
+        </p>
+        <a href="#" class="flex justify-content-center align-items-center">
+          <img src="images/lema.svg" alt="Lema: Ciencia + Diseño" />
+        </a>
+      </div>
+      <p class="flex justify-content-center align-items-center none-desktop">
+        &copy; 2024 El Gato y la Caja. Todos los derechos reservados.
+      </p>
     </footer>
     <script src="index.js"></script>
   </body>
