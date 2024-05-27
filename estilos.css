@@ -129,6 +129,10 @@ text {
   .intro-container h2 {
     /* max-width: calc(100% - 11rem); */
 }
+  .gracias-mobile {
+    flex-wrap:wrap;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -392,8 +396,8 @@ nav {
 
 /* Main Styles */
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .text-container h2 {
@@ -455,6 +459,11 @@ footer {
 .flecha-seccion {
   min-width: 37px;
   min-height: 17px;
+}
+
+.flecha-form {
+  min-width: 29px;
+  min-height: 24px;
 }
 
 .flecha-numero {
@@ -520,7 +529,15 @@ input {
 
 .jw-modal-body {
   padding: 20px;
-  background: #fff;
+  border-image: linear-gradient(
+    to top,
+    var(--acento-ro),
+    var(--acento-az),
+    var(--acento-am)
+  )
+  15;
+  background-color: var(--dominante-n);
+  color: var(--subordinado-b);
 }
 
 body.jw-modal-open {
