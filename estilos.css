@@ -43,6 +43,10 @@
 
 .titulo {
   font-family: var(--font-garamond-semibold-italic);
+  font-size: 2.375rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 2.25rem;
 }
 
 .oracion {
@@ -51,6 +55,10 @@
 
 .discord {
   font-family: var(--font-ginto-bold);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
 }
 
 text {
