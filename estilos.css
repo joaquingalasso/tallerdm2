@@ -1,3 +1,5 @@
+/* Variables de paleta cromática */
+
 :root {
   --dominante-n: #1f1f1f;
   --subordinado-b: #ffffff;
@@ -5,6 +7,18 @@
   --acento-az: #68bbe8;
   --acento-ro: #ee5d52;
   --acento-am: #eede52;
+}
+
+/* Variables de familias tipográficas */
+:root {
+  --font-overpass-mono-medium: "Overpass Mono Medium", sans-serif;
+  --font-overpass-mono-regular: "Overpass Mono Regular", sans-serif;
+  --font-gotham-book: "Gotham Book", sans-serif;
+  --font-gotham-medium: "Gotham Medium", sans-serif;
+  --font-garamond-premier-pro-italic-caption: "Garamond Premier Pro Italic Caption", serif;
+  --font-garamond-premier-pro-semibold-italic: "Garamond Premier Pro Semibold Italic", serif;
+  --font-gotham-light: "Gotham Light", sans-serif;
+  --font-ginto-bold: "Ginto Bold", sans-serif;
 }
 
 text {
@@ -40,6 +54,11 @@ text {
 @font-face {
   font-family: "Gotham Medium";
   src: url("../data/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ginto Bold";
+  src: url("../data/Ginto-Bold.otf") format("opentype");
 }
 
 /* CSS general */
@@ -517,7 +536,7 @@ input {
   
   /* semi-transparent black background exposed by padding */
   background-color: rgba(0, 0, 0, .75);
-  padding: 40px;
+  padding: 80px;
 
   /* enables scrolling for tall modals */
   overflow: auto;
@@ -528,16 +547,14 @@ input {
 }
 
 .jw-modal-body {
-  padding: 20px;
-  border-image: linear-gradient(
-    to top,
-    var(--acento-ro),
-    var(--acento-az),
-    var(--acento-am)
-  )
-  15;
   background-color: var(--dominante-n);
   color: var(--subordinado-b);
+  border: double 3px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(#1f1f1f, #1f1f1f),                     linear-gradient(    to top,    var(--acento-ro),    var(--acento-az),    var(--acento-am)  );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 20px;
 }
 
 body.jw-modal-open {
