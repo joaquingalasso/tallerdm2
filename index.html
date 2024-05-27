@@ -500,24 +500,17 @@ style="background-image: url(images/tienda.jpg)"
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
           <div class="text-container">
             <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4><3</h4>
-              </div>
-              <div class="text-badge">
+              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0;">
                 <h4>Exclusividad</h4>
               </div>
             </div>
             <div
               class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
             >
-              <img
-                src="icons/exclusividad.svg"
-                alt="Exclusividad"
-                class="content-icon"
-              />
+
               <p>Accedé a contenido exclusivo para adscriptos.</p>
             </div>
           </div>
@@ -617,18 +610,16 @@ style="background-image: url(images/tienda.jpg)"
           <!-- FEEDBACK -->
           <div id="modal-1" class="jw-modal">
             <div class="jw-modal-body">
-              <div class="intro-container">
-                <div>
-                  <div class="flex align-flex-end flex-row gracias-mobile">
+              <div class="flex intro-container flex-column" style="margin:0">
+                <div class="flex prioridad-fill flex-column">
+                  <div class="align-flex-end flex flex-row gracias-mobile flex-column">
                     <h2 style="padding-left: 0 !important;">¡Gracias, Joaquín!</h2>
                     <div class="divisor" style="background-image: url(images/divisor-feedback.svg);"></div>
                   </div>
-                  <h3>
-                    Nos alegra mucho que te hayas unido a nuestra comunidad de Discord. 
-Pronto te enviaremos un enlace al e-mail que registraste (joacogalasso@gmail.com) 
-a través del cual podrás entrar al servidor.
+                  <h3 class="prioridad-fill">
+                    Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span> Pronto te enviaremos un enlace al e-mail que registraste (joacogalasso@gmail.com)  a través del cual podrás entrar al servidor.
                   </h3>
-                  <h3>
+                  <h3 class="flex prioridad-fill">
                     ¡Esperamos que tu experiencia sea grata!
                   </h3>
                 </div>
