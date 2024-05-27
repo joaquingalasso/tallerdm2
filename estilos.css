@@ -11,14 +11,46 @@
 
 /* Variables de familias tipográficas */
 :root {
-  --font-overpass-mono-medium: "Overpass Mono Medium", sans-serif;
-  --font-overpass-mono-regular: "Overpass Mono Regular", sans-serif;
+  --font-overpass-medium: "Overpass Mono Medium", sans-serif;
+  --font-overpass-regular: "Overpass Mono Regular", sans-serif;
   --font-gotham-book: "Gotham Book", sans-serif;
   --font-gotham-medium: "Gotham Medium", sans-serif;
-  --font-garamond-premier-pro-italic-caption: "Garamond Premier Pro Italic Caption", serif;
-  --font-garamond-premier-pro-semibold-italic: "Garamond Premier Pro Semibold Italic", serif;
+  --font-garamond-italic-caption: "Garamond Premier Pro Italic Caption", serif;
+  --font-garamond-semibold-italic: "Garamond Premier Pro Semibold Italic", serif;
   --font-gotham-light: "Gotham Light", sans-serif;
   --font-ginto-bold: "Ginto Bold", sans-serif;
+}
+
+.extras {
+  font-family: var(--font-overpass-medium);
+}
+
+.subtitulos {
+  font-family: var(--font-overpass-regular);
+}
+
+.header-items {
+  font-family: var(--font-gotham-book);
+}
+
+.cta-parrafos {
+  font-family: var(--font-gotham-medium);
+}
+
+.titulos-item {
+  font-family: var(--font-garamond-italic-caption);
+}
+
+.titulo {
+  font-family: var(--font-garamond-semibold-italic);
+}
+
+.oracion {
+  font-family: var(--font-gotham-light);
+}
+
+.discord {
+  font-family: var(--font-ginto-bold);
 }
 
 text {
