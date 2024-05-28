@@ -76,7 +76,7 @@
         >
           <h1 class="no-margin-top"><span class="header-items" id="solo-imagina">SÓLO IMAGINÁ</span><br /><span class="titulo" id="un-lugar">UN LUGAR...</span></h1>
           <h2 class="subtitulos" id="subtitulo-hero">…en el que tengas todo<br />a tu disposición.</h2>
-          <a href="#" class="btn btn-ro text-container cta-parrafos"
+          <a class="btn btn-ro text-container cta-parrafos" id="bajar-form"
             >¡Quiero <span class="extras">GATO</span> en mi <span class="discord">Discord</span>!</a
           >
         </div>
@@ -455,6 +455,7 @@ style="background-image: url(images/tienda.jpg)"
           <a
             href="#"
             class="btn btn-am text-container"
+            id="bajar-form"
             style="
               text-align: center;
               grid-column-end: -3;
@@ -501,10 +502,12 @@ style="background-image: url(images/tienda.jpg)"
         </div>
 
         <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
+
+          <div class="flex flex-column gap" style="gap: 0rem;">
           <div class="text-container">
             <div class="flex justify-space-between flex-row">
-              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0;">
-                <h4>Exclusividad</h4>
+              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
+                <h4>como espacios de encuentro</h4>
               </div>
             </div>
             <div
@@ -513,6 +516,42 @@ style="background-image: url(images/tienda.jpg)"
               <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
             </div>
           </div>
+          <p>Podés unirte a una mesa y charlar con otros miembros sobre neurociencia, diseño gráfico o cualquier otro tema. 
+            ¡Es como estar en una conferencia, pero desde la comodidad de tu casa!</p>
+         </div>
+
+         <div class="flex flex-column gap" style="gap: 0rem;">
+          <div class="text-container">
+            <div class="flex justify-space-between flex-row">
+              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
+                <h4>como piezas de un rompecabezas</h4>
+              </div>
+            </div>
+            <div
+              class="text-container background-size" style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;"
+            >
+              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
+            </div>
+          </div>
+          <p>Los roles no sólo son etiquetas; éstos son la base para crear una comunidad diversa, personalizando tu experiencia y dándote la opción de elegir cómo te desenvolvés en el servidor.</p>
+         </div>
+
+         <div class="flex flex-column gap" style="gap: 0rem;">
+          <div class="text-container">
+            <div class="flex justify-space-between flex-row">
+              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
+                <h4>como habitaciones temáticas</h4>
+              </div>
+            </div>
+            <div
+              class="text-container background-size" style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;"
+            >
+              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
+            </div>
+          </div>
+          <p>Tenemos canales para todo: desde charlas informales hasta debates extenuantes. Además, nuestros foros estructuran las conversaciones, lo que facilita encontrar información relevante.</p>
+         </div>
+
         </div>
       </section>
 
@@ -570,11 +609,11 @@ style="background-image: url(images/tienda.jpg)"
             >
             <div class="flex justify-content-left flex-column">
             <div class="flex align-items-center">
-              <input type="checkbox" name="podcasts" value="Podcasts" />
+              <input type="checkbox" name="podcasts" value="Podcasts" id="check-1"/>
               <label for="podcasts">Podcasts</label>
             </div>
             <div class="flex align-items-center">
-              <input type="checkbox" name="tienda" value="Tienda" />
+              <input type="checkbox" name="tienda" value="Tienda" id="check-2"/>
               <label for="tienda">Tienda</label>
             </div>
             </div>
@@ -584,22 +623,23 @@ style="background-image: url(images/tienda.jpg)"
                 <input
                   type="checkbox"
                   name="experimentos"
-                  value="Experimentos"/>
+                  value="Experimentos"
+                  id="check-3"/>
                 <label for="experimentos">Experimentos</label>
               </div>
               <div class="flex align-items-center">
-                <input type="checkbox" name="libros" value="Libros" />
+                <input type="checkbox" name="libros" value="Libros" id="check-4"/>
                 <label for="libros">Libros</label>
               </div>
             </div>
             
             <div class="flex justify-content-left flex-column">
             <div class="flex align-items-center text-left">
-              <input type="checkbox" name="articulos" value="Artículos" />
+              <input type="checkbox" name="articulos" value="Artículos" id="check-5"/>
               <label for="articulos">Artículos</label>
             </div>
               <div class="flex align-items-center text-left">
-                <input type="checkbox" name="todo" value="Todo" />
+                <input type="checkbox" name="todo" value="Todo" id="check-6"/>
                 <label for="todo">¡Todo!</label>
               </div>
             </div>
@@ -607,6 +647,7 @@ style="background-image: url(images/tienda.jpg)"
             <button
               type="submit"
               class="btn btn-az"
+              id="btn-form hasta-aca"
               onclick="openModal('modal-1')"
             >
             ¡Añádanme al bendito Discord!
@@ -619,11 +660,11 @@ style="background-image: url(images/tienda.jpg)"
               <div class="flex intro-container flex-column" style="margin:0">
                 <div class="flex prioridad-fill flex-column">
                   <div class="align-flex-end flex flex-row gracias-mobile flex-column">
-                    <h2 style="padding-left: 0 !important;">¡Gracias, <span id:></span>!</h2>
+                    <h2 style="padding-left: 0 !important;">¡Gracias, <span id="nombre-feedback"></span>!</h2>
                     <div class="divisor" style="background-image: url(images/divisor-feedback.svg);"></div>
                   </div>
                   <h3 class="prioridad-fill">
-                    Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span> Pronto te enviaremos un enlace al e-mail que registraste (<span id="ingresa-nombre"></span>)  a través del cual podrás entrar al servidor.
+                    Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span> Pronto te enviaremos un enlace al e-mail que registraste (<span id="mail-feedback"></span>)  a través del cual podrás entrar al servidor.
                   </h3>
                   <h3 class="flex prioridad-fill">
                     ¡Esperamos que tu experiencia sea grata!
@@ -638,7 +679,7 @@ style="background-image: url(images/tienda.jpg)"
                 </div>
       
                 </div>
-              <button onclick="closeModal()" class="btn btn-ro text-container" style="z-index: 1;">Cerrar</button>
+              <button onclick="closeModal()" id="btn-cerrar" class="btn btn-ro text-container" style="z-index: 1;">Cerrar</button>
             </div>
           </div>
         </div>
@@ -713,5 +754,41 @@ style="background-image: url(images/tienda.jpg)"
       </p>
     </footer>
     <script src="index.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            
+            direction: 'horizontal',
+
+
+
+           
+            scrollbar: { enabled: false },
+
+           
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            
+            breakpoints: {
+          
+
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 35,
+
+                }
+            },
+            
+            navigation: { enabled: false }
+        });
+    </script>
   </body>
 </html>
