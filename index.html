@@ -470,7 +470,7 @@ style="background-image: url(images/tienda.jpg)"
           <div class="flex justify-space-between">
             <h4>03/</h4>
             <h4 class="text-right" style="text-transform: uppercase">
-              — ¿Por qué? No hay por qué ;)
+              — Este no es un servidor cualquiera ;)
             </h4>
           </div>
           <div>
@@ -508,10 +508,9 @@ style="background-image: url(images/tienda.jpg)"
               </div>
             </div>
             <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+              class="text-container background-size" style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;"
             >
-
-              <p>Accedé a contenido exclusivo para adscriptos.</p>
+              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
             </div>
           </div>
         </div>
@@ -569,34 +568,41 @@ style="background-image: url(images/tienda.jpg)"
               class="flex justify-space-between align-items-center"
               style="flex-wrap: wrap"
             >
-              <div class="flex justify-space-between align-items-center">
-                <input type="checkbox" name="libros" value="Libros" />
-                <label for="libros">Libros</label>
-              </div>
-              <div class="flex justify-space-between align-items-center">
-                <input type="checkbox" name="articulos" value="Artículos" />
-                <label for="articulos">Artículos</label>
-              </div>
-              <div class="flex justify-space-between align-items-center">
-                <input type="checkbox" name="podcasts" value="Podcasts" />
-                <label for="podcasts">Podcasts</label>
-              </div>
-              <div class="flex justify-space-between align-items-center">
+            <div class="flex justify-content-left flex-column">
+            <div class="flex align-items-center">
+              <input type="checkbox" name="podcasts" value="Podcasts" />
+              <label for="podcasts">Podcasts</label>
+            </div>
+            <div class="flex align-items-center">
+              <input type="checkbox" name="tienda" value="Tienda" />
+              <label for="tienda">Tienda</label>
+            </div>
+            </div>
+
+            <div class="flex justify-content-left flex-column">
+              <div class="flex align-items-center">
                 <input
                   type="checkbox"
                   name="experimentos"
-                  value="Experimentos"
-                />
+                  value="Experimentos"/>
                 <label for="experimentos">Experimentos</label>
               </div>
-              <div class="flex justify-space-between align-items-center">
-                <input type="checkbox" name="tienda" value="Tienda" />
-                <label for="tienda">Tienda</label>
+              <div class="flex align-items-center">
+                <input type="checkbox" name="libros" value="Libros" />
+                <label for="libros">Libros</label>
               </div>
-              <div class="flex justify-space-between align-items-center">
+            </div>
+            
+            <div class="flex justify-content-left flex-column">
+            <div class="flex align-items-center text-left">
+              <input type="checkbox" name="articulos" value="Artículos" />
+              <label for="articulos">Artículos</label>
+            </div>
+              <div class="flex align-items-center text-left">
                 <input type="checkbox" name="todo" value="Todo" />
                 <label for="todo">¡Todo!</label>
               </div>
+            </div>
             </div>
             <button
               type="submit"
@@ -609,21 +615,30 @@ style="background-image: url(images/tienda.jpg)"
 
           <!-- FEEDBACK -->
           <div id="modal-1" class="jw-modal">
-            <div class="jw-modal-body">
+            <div class="jw-modal-body" style="overflow: hidden;">
               <div class="flex intro-container flex-column" style="margin:0">
                 <div class="flex prioridad-fill flex-column">
                   <div class="align-flex-end flex flex-row gracias-mobile flex-column">
-                    <h2 style="padding-left: 0 !important;">¡Gracias, Joaquín!</h2>
+                    <h2 style="padding-left: 0 !important;">¡Gracias, <span id:></span>!</h2>
                     <div class="divisor" style="background-image: url(images/divisor-feedback.svg);"></div>
                   </div>
                   <h3 class="prioridad-fill">
-                    Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span> Pronto te enviaremos un enlace al e-mail que registraste (joacogalasso@gmail.com)  a través del cual podrás entrar al servidor.
+                    Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span> Pronto te enviaremos un enlace al e-mail que registraste (<span id="ingresa-nombre"></span>)  a través del cual podrás entrar al servidor.
                   </h3>
                   <h3 class="flex prioridad-fill">
                     ¡Esperamos que tu experiencia sea grata!
                   </h3>
+                  <div class="grid-container" style="margin:0; gap: 0px !important;     justify-items: center; align-content: center;
+    align-items: center; height: 100px;">
+                    <img src="images/logo-completo.svg" alt="Nyan Cat" class="none-mobile" style="
+                    max-width: 50%;
+                    max-height: 50%;
+                    grid-column-end: 2; grid-column-start: 1;"/>
+                  <img src="images/nyan-cat.gif" alt="Nyan Cat" style="transform: scaleX(-1); max-width:125%; max-height:125%; grid-column-end: 3; grid-column-start: 2; z-index: 0;" class="none-mobile" />
                 </div>
-              <button onclick="closeModal()" class="btn btn-ro text-container">Cerrar</button>
+      
+                </div>
+              <button onclick="closeModal()" class="btn btn-ro text-container" style="z-index: 1;">Cerrar</button>
             </div>
           </div>
         </div>

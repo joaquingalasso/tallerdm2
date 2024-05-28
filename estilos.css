@@ -249,6 +249,10 @@ text {
     flex-wrap:wrap;
     text-align: center;
   }
+
+  .jw-modal {
+    padding: 20px !important;
+}
 }
 
 @media (min-width: 768px) {
@@ -328,6 +332,10 @@ img {
 
 .text-right {
   text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 /* Estilos específicos para la sección */
@@ -636,7 +644,7 @@ input {
   padding: 80px;
 
   /* enables scrolling for tall modals */
-  overflow: auto;
+  overflow: overlay;
 }
 
 .jw-modal.open {
