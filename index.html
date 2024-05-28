@@ -1,376 +1,278 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El Gato y la Caja - Ciencia + Diseño</title>
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
 
-  <body>
-    <header class="hero-image background-size">
-      <nav class="navigation">
-        <a href="#" class="flex justify-content-center align-items-center">
-          <img src="images/logo-completo.svg" alt="Logo: El Gato y la Caja" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Gato y la Caja - Ciencia + Diseño</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header class="hero-image background-size">
+    <nav class="navigation">
+      <a href="#" class="flex justify-content-center align-items-center">
+        <img src="images/logo-completo.svg" alt="Logo: El Gato y la Caja" />
+      </a>
+      <a href="#" class="flex justify-content-center align-items-center">
+        <img src="images/lema.svg" alt="Lema: Ciencia + Diseño" />
+      </a>
+      <div class="social-media-container none-mobile flex-row">
+        <a href="https://instagram.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/instagram.svg" alt="Instagram" />
         </a>
-        <a href="#" class="flex justify-content-center align-items-center">
-          <img src="images/lema.svg" alt="Lema: Ciencia + Diseño" />
+
+        <a href="https://twitch.tv/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/twitch.svg" alt="Twitch" />
         </a>
-        <div class="social-media-container none-mobile flex-row">
-          <a
-            href="https://instagram.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/instagram.svg" alt="Instagram" />
-          </a>
 
-          <a
-            href="https://twitch.tv/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/twitch.svg" alt="Twitch" />
-          </a>
+        <a href="https://youtube.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/youtube.svg" alt="YouTube" />
+        </a>
 
-          <a
-            href="https://youtube.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/youtube.svg" alt="YouTube" />
-          </a>
+        <a href="https://twitter.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/twitter.svg" alt="Twitter" />
+        </a>
 
-          <a
-            href="https://twitter.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/twitter.svg" alt="Twitter" />
-          </a>
+        <a href="https://facebook.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/facebook.svg" alt="Facebook" />
+        </a>
+      </div>
+    </nav>
 
-          <a
-            href="https://facebook.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/facebook.svg" alt="Facebook" />
-          </a>
-        </div>
-      </nav>
-
-      <section class="hero hero-container">
-        <img
-          src="images/gato-mobile.png"
-          alt="Gato y Discord"
-          class="none-desktop"
-          style="max-width: 145%; transform: rotate(-10deg); z-index: -1"
-        />
-        <div
-          style="
+    <section class="hero hero-container">
+      <img src="images/gato-mobile.png" alt="Gato y Discord" class="none-desktop"
+        style="max-width: 145%; transform: rotate(-10deg); z-index: -1" />
+      <div style="
             margin-bottom: 3rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-          "
-        >
-          <h1 class="no-margin-top"><span class="header-items" id="solo-imagina">SÓLO IMAGINÁ</span><br /><span class="titulo" id="un-lugar">UN LUGAR...</span></h1>
-          <h2 class="subtitulos" id="subtitulo-hero">…en el que tengas todo<br />a tu disposición.</h2>
-          <a class="btn btn-ro text-container cta-parrafos" id="bajar-form"
-            >¡Quiero <span class="extras">GATO</span> en mi <span class="discord">Discord</span>!</a
-          >
+          ">
+        <h1 class="no-margin-top"><span id="solo-imagina">SÓLO IMAGINÁ</span><br /><span
+            class="titulo" id="un-lugar">UN LUGAR...</span></h1>
+        <h2 class="subtitulos" id="subtitulo-hero">…en el que tengas todo<br />a tu disposición.</h2>
+        <button class="btn btn-ro text-container cta-parrafos" id="bajar-form">¡Quiero <span class="extras">GATO</span> en mi
+          <span class="discord">Discord</span>!</button>
+      </div>
+      <img src="images/gato-desktop.png" alt="Gato y Discord" class="none-mobile"
+        style="max-width: 100%; z-index: -1" />
+    </section>
+
+    <video autoplay muted loop id="hero-background" style="mix-blend-mode: luminosity">
+      <source src="images/hero-background.mp4" type="video/mp4" />
+    </video>
+  </header>
+
+  <main>
+    <section class="primera background-size">
+      <div class="intro-container">
+        <div class="flex justify-space-between extras">
+          <h4>03/</h4>
+          <h4 class="text-right extras" style="text-transform: uppercase">
+            — ¿Por qué? No hay por qué ;)
+          </h4>
         </div>
-        <img
-          src="images/gato-desktop.png"
-          alt="Gato y Discord"
-          class="none-mobile"
-          style="max-width: 100%; z-index: -1"
-        />
-      </section>
-
-      <video
-        autoplay
-        muted
-        loop
-        id="hero-background"
-        style="mix-blend-mode: luminosity"
-      >
-        <source src="images/hero-background.mp4" type="video/mp4" />
-      </video>
-    </header>
-
-    <main>
-      <section class="primera background-size">
-        <div class="intro-container">
-          <div class="flex justify-space-between extras">
-            <h4>03/</h4>
-            <h4 class="text-right extras" style="text-transform: uppercase">
-              — ¿Por qué? No hay por qué ;)
-            </h4>
+        <div>
+          <div class="flex align-flex-end flex-row">
+            <svg width="83" height="29" viewBox="0 0 83 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="icons flecha-seccion" alt="Flecha de sección">
+              <path id="Vector"
+                d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
+                fill="var(--acento-ro)" />
+            </svg>
+            <h2 class="titulos-seccion">¿Por qué unirte?</h2>
+            <div class="divisor" style="background-image: url(images/divisor.svg);"></div>
           </div>
-          <div>
-            <div class="flex align-flex-end flex-row">
-              <svg
-                width="83"
-                height="29"
-                viewBox="0 0 83 29"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                class="icons flecha-seccion"
-                alt="Flecha de sección"
-              >
-                <path
-                  id="Vector"
-                  d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
-                  fill="var(--acento-ro)"
-                />
-              </svg>
-              <h2 class="titulos-seccion">¿Por qué unirte?</h2>
-              <div class="divisor" style="background-image: url(images/divisor.svg);"></div>
+          <h3>
+            Hay múltiples razones por las que nuestro servidor podría
+            interesarte:
+          </h3>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="text-container">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>
+                <3</h4>
             </div>
-            <h3>
-              Hay múltiples razones por las que nuestro servidor podría
-              interesarte:
-            </h3>
+            <div class="text-badge">
+              <h4 class="titulos-item">Exclusividad</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill">
+            <img src="icons/exclusividad.svg" alt="Exclusividad" class="content-icon" />
+            <p>Accedé a contenido exclusivo para adscriptos.</p>
           </div>
         </div>
 
-        <div class="grid-container">
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4><3</h4>
-              </div>
-              <div class="text-badge">
-                <h4>Exclusividad</h4>
-              </div>
+        <div class="text-container">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>
+                <33 </h4>
             </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-            >
-              <img
-                src="icons/exclusividad.svg"
-                alt="Exclusividad"
-                class="content-icon"
-              />
-              <p>Accedé a contenido exclusivo para adscriptos.</p>
+            <div class="text-badge">
+              <h4 class="titulos-item">Interacción</h4>
             </div>
           </div>
-
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4><33</h4>
-              </div>
-              <div class="text-badge">
-                <h4>Interacción</h4>
-              </div>
-            </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-            >
-              <img
-                src="icons/interaccion.svg"
-                alt="Interacción"
-                class="content-icon"
-              />
-              <p>Participá en foros y debates online.</p>
-            </div>
-          </div>
-
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4><333</h4>
-              </div>
-              <div class="text-badge">
-                <h4>Síntesis</h4>
-              </div>
-            </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-            >
-              <img
-                src="icons/sintesis.svg"
-                alt="Síntesis"
-                class="content-icon"
-              />
-              <p>Recibí un resumen semanal con las últimas novedades.</p>
-            </div>
-          </div>
-
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4><3333</h4>
-              </div>
-              <div class="text-badge">
-                <h4>Transformación</h4>
-              </div>
-            </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-            >
-              <img
-                src="icons/transformacion.svg"
-                alt="Transformación"
-                class="content-icon"
-              />
-              <p>
-                Contribuí a un proyecto que promueve el conocimiento y la
-                innovación.
-              </p>
-            </div>
-          </div>
-
           <div
-            class="text-container"
-            style="grid-column-end: -3; grid-column-start: -1"
-          >
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4><33333</h4>
-              </div>
-              <div class="text-badge">
-                <h4>Networking</h4>
-              </div>
-            </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-            >
-              <img
-                src="icons/networking.svg"
-                alt="Networking"
-                class="content-icon"
-              />
-              <p>
-                Conectá con otras personas interesadas en las ciencias y el
-                diseño.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="segunda background-size">
-        <div class="intro-container">
-          <div class="flex justify-space-between">
-            <h4>02/</h4>
-            <h4 class="text-right" style="text-transform: uppercase">
-              — Contenido gratuito, de calidad y para todos ;)
-            </h4>
-          </div>
-          <div>
-            <div class="flex align-flex-end flex-row">
-              <svg
-                width="83"
-                height="29"
-                viewBox="0 0 83 29"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                class="icons flecha-seccion"
-                alt="Flecha de sección"
-              >
-                <path
-                  id="Vector"
-                  d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
-                  fill="var(--acento-am)"
-                />
-              </svg>
-              <h2>¿Qué ofrecemos?</h2>
-              <div class="divisor" style="background-image: url(images/divisor-am.svg);"></div>
-            </div>
-            <h3>Tenemos una inmensidad de recursos para brindarte:</h3>
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill">
+            <img src="icons/interaccion.svg" alt="Interacción" class="content-icon" />
+            <p>Participá en foros y debates online.</p>
           </div>
         </div>
 
-        <div class="grid-container">
-          <div class="text-container" style="border: 1px solid var(--subordinado-b)">
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4>01</h4>
-                <img
-                  src="icons/flecha-numero.svg"
-                  alt="Flecha de número"
-                  class="flecha-numero"
-                />
-              </div>
-              <div class="text-badge" style="color: var(--dominante-n)">
-                <h4>Libros</h4>
-              </div>
+        <div class="text-container">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>
+                <333</h4>
             </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-              style="color: var(--dominante-n)"
-            >
-              <ul>
-                <li>
-                  Descargá libros electrónicos en PDF sobre diversos tópicos
-                  súper interesantes.
-                </li>
-              </ul>
+            <div class="text-badge">
+              <h4 class="titulos-item">Síntesis</h4>
             </div>
           </div>
-
           <div
-            class="text-container background-size"
-            style="background-image: url(images/libros.jpg)"
-          ></div>
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill">
+            <img src="icons/sintesis.svg" alt="Síntesis" class="content-icon" />
+            <p>Recibí un resumen semanal con las últimas novedades.</p>
+          </div>
+        </div>
 
-          <div
-          class="text-container background-size none-mobile"
-          style="background-image: url(images/podcasts.jpg)"
-        ></div>
-
-          <div class="text-container" style="border: 1px solid var(--subordinado-b)">
-            <div class="flex justify-space-between flex-row">
-              <div class="icon-badge">
-                <h4>02</h4>
-                <img
-                  src="icons/flecha-numero.svg"
-                  alt="Flecha de número"
-                  class="flecha-numero"
-                />
-              </div>
-              <div class="text-badge" style="color: var(--dominante-n)">
-                <h4>Podcasts</h4>
-              </div>
+        <div class="text-container">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>
+                <3333</h4>
             </div>
-            <div
-              class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-              style="color: var(--dominante-n)"
-            >
-              <ul>
-                <li>
-                  Escuchá podcasts sobre temas de actualidad social y cultural.
-                </li>
-              </ul>
+            <div class="text-badge">
+              <h4 class="titulos-item">Transformación</h4>
             </div>
           </div>
-
           <div
-          class="text-container background-size none-desktop"
-          style="background-image: url(images/podcasts.jpg)"
-        ></div>
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill">
+            <img src="icons/transformacion.svg" alt="Transformación" class="content-icon" />
+            <p>
+              Contribuí a un proyecto que promueve el conocimiento y la
+              innovación.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-container" style="grid-column-end: -3; grid-column-start: -1">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>
+                <33333</h4>
+            </div>
+            <div class="text-badge">
+              <h4 class="titulos-item">Networking</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill">
+            <img src="icons/networking.svg" alt="Networking" class="content-icon" />
+            <p>
+              Conectá con otras personas interesadas en las ciencias y el
+              diseño.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="segunda background-size">
+      <div class="intro-container">
+        <div class="flex justify-space-between">
+          <h4>02/</h4>
+          <h4 class="text-right" style="text-transform: uppercase">
+            — Contenido gratuito, de calidad y para todos ;)
+          </h4>
+        </div>
+        <div>
+          <div class="flex align-flex-end flex-row">
+            <svg width="83" height="29" viewBox="0 0 83 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="icons flecha-seccion" alt="Flecha de sección">
+              <path id="Vector"
+                d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
+                fill="var(--acento-am)" />
+            </svg>
+            <h2 class="titulos-seccion">¿Qué ofrecemos?</h2>
+            <div class="divisor" style="background-image: url(images/divisor-am.svg);"></div>
+          </div>
+          <h3>Tenemos una inmensidad de recursos para brindarte:</h3>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>01</h4>
+              <img src="icons/flecha-numero.svg" alt="Flecha de número" class="flecha-numero" />
+            </div>
+            <div class="text-badge" style="color: var(--dominante-n)">
+              <h4 class="titulos-item">Libros</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+            style="color: var(--dominante-n)">
+            <ul>
+              <li>
+                Descargá libros electrónicos en PDF sobre diversos tópicos
+                súper interesantes.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-container background-size" style="background-image: url(images/libros.jpg)"></div>
+
+        <div class="text-container background-size none-mobile" style="background-image: url(images/podcasts.jpg)">
+        </div>
+
+        <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>02</h4>
+              <img src="icons/flecha-numero.svg" alt="Flecha de número" class="flecha-numero" />
+            </div>
+            <div class="text-badge" style="color: var(--dominante-n)">
+              <h4 class="titulos-item">Podcasts</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+            style="color: var(--dominante-n)">
+            <ul>
+              <li>
+                Escuchá podcasts sobre temas de actualidad social y cultural.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-container background-size none-desktop" style="background-image: url(images/podcasts.jpg)">
+        </div>
 
         <div class="text-container" style="border: 1px solid var(--subordinado-b)">
           <div class="flex justify-space-between flex-row">
             <div class="icon-badge">
               <h4>03</h4>
-              <img
-                src="icons/flecha-numero.svg"
-                alt="Flecha de número"
-                class="flecha-numero"
-              />
+              <img src="icons/flecha-numero.svg" alt="Flecha de número" class="flecha-numero" />
             </div>
             <div class="text-badge" style="color: var(--dominante-n)">
-              <h4>Artículos</h4>
+              <h4 class="titulos-item">Artículos</h4>
             </div>
           </div>
           <div
             class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-            style="color: var(--dominante-n)"
-          >
+            style="color: var(--dominante-n)">
             <ul>
               <li>
                 Leé artículos de análisis, reportajes y entrevistas con expertos.
@@ -378,417 +280,303 @@
             </ul>
           </div>
         </div>
-        
-        <div
-        class="text-container background-size"
-        style="background-image: url(images/articulos.jpg)"
-        ></div>
 
-        <div
-class="text-container background-size none-mobile"
-style="background-image: url(images/experimentos.jpg)"
-></div>
+        <div class="text-container background-size" style="background-image: url(images/articulos.jpg)"></div>
 
-<div class="text-container" style="border: 1px solid var(--subordinado-b)">
-  <div class="flex justify-space-between flex-row">
-    <div class="icon-badge">
-      <h4>04</h4>
-      <img
-        src="icons/flecha-numero.svg"
-        alt="Flecha de número"
-        class="flecha-numero"
-      />
-    </div>
-    <div class="text-badge" style="color: var(--dominante-n)">
-      <h4>Experimentos</h4>
-    </div>
-  </div>
-  <div
-    class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-    style="color: var(--dominante-n)"
-  >
-    <ul>
-      <li>
-        Participá en experimentos online y aprendé sobre la investigación.
-      </li>
-    </ul>
-  </div>
-</div>
+        <div class="text-container background-size none-mobile" style="background-image: url(images/experimentos.jpg)">
+        </div>
 
-<div
-class="text-container background-size none-desktop"
-style="background-image: url(images/experimentos.jpg)"
-></div>
+        <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>04</h4>
+              <img src="icons/flecha-numero.svg" alt="Flecha de número" class="flecha-numero" />
+            </div>
+            <div class="text-badge" style="color: var(--dominante-n)">
+              <h4 class="titulos-item">Experimentos</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+            style="color: var(--dominante-n)">
+            <ul>
+              <li>
+                Participá en experimentos online y aprendé sobre la investigación.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-container background-size none-desktop" style="background-image: url(images/experimentos.jpg)">
+        </div>
 
 
-<div class="text-container" style="border: 1px solid var(--subordinado-b)">
-  <div class="flex justify-space-between flex-row">
-    <div class="icon-badge">
-      <h4>05</h4>
-      <img
-        src="icons/flecha-numero.svg"
-        alt="Flecha de número"
-        class="flecha-numero"
-      />
-    </div>
-    <div class="text-badge" style="color: var(--dominante-n)">
-      <h4>Tienda</h4>
-    </div>
-  </div>
-  <div
-    class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
-    style="color: var(--dominante-n)"
-  >
-    <ul>
-      <li>
-        Llevate un pedacito del proyecto a casa con nuestros productos.
-      </li>
-    </ul>
-  </div>
-</div>
+        <div class="text-container" style="border: 1px solid var(--subordinado-b)">
+          <div class="flex justify-space-between flex-row">
+            <div class="icon-badge">
+              <h4>05</h4>
+              <img src="icons/flecha-numero.svg" alt="Flecha de número" class="flecha-numero" />
+            </div>
+            <div class="text-badge" style="color: var(--dominante-n)">
+              <h4 class="titulos-item">Tienda</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-content-left align-items-center gap-2-5rem align-items-center espaciado-card prioridad-fill"
+            style="color: var(--dominante-n)">
+            <ul>
+              <li>
+                Llevate un pedacito del proyecto a casa con nuestros productos.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<div
-class="text-container background-size"
-style="background-image: url(images/tienda.jpg)"
-></div>
+        <div class="text-container background-size" style="background-image: url(images/tienda.jpg)"></div>
 
-          <a
-            href="#"
-            class="btn btn-am text-container"
-            id="bajar-form"
-            style="
-              text-align: center;
+        <button href="#" class="btn btn-am text-container" id="bajar-form" style="
+              align-items: center;
               grid-column-end: -3;
               grid-column-start: -1;
-            "
-            >No los quiero... ¡Los necesito!</a
-          >
+            ">No los quiero... ¡Los necesito!</button>
+      </div>
+    </section>
+
+    <section class="tercera background-size">
+      <div class="intro-container">
+        <div class="flex justify-space-between">
+          <h4>03/</h4>
+          <h4 class="text-right" style="text-transform: uppercase">
+            — Este no es un servidor cualquiera ;)
+          </h4>
         </div>
-      </section>
-
-      <section class="tercera background-size">
-        <div class="intro-container">
-          <div class="flex justify-space-between">
-            <h4>03/</h4>
-            <h4 class="text-right" style="text-transform: uppercase">
-              — Este no es un servidor cualquiera ;)
-            </h4>
+        <div>
+          <div class="flex align-flex-end flex-row">
+            <svg width="83" height="29" viewBox="0 0 83 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="icons flecha-seccion" alt="Flecha de sección">
+              <path id="Vector"
+                d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
+                fill="var(--acento-az)" />
+            </svg>
+            <h2 class="titulos-seccion">¿Cómo funciona?</h2>
+            <div class="divisor" style="background-image: url(images/divisor-az.svg);"></div>
           </div>
-          <div>
-            <div class="flex align-flex-end flex-row">
-              <svg
-                width="83"
-                height="29"
-                viewBox="0 0 83 29"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                class="icons flecha-seccion"
-                alt="Flecha de sección"
-              >
-                <path
-                  id="Vector"
-                  d="M82.1469 15.3828C82.9206 14.6403 82.9206 13.4366 82.1469 12.6941L69.5374 0.595285C68.7637 -0.147159 67.5092 -0.147159 66.7353 0.595287C65.9616 1.33773 65.9616 2.54148 66.7353 3.28392L77.9438 14.0384L66.7353 24.793C65.9616 25.5354 65.9616 26.7391 66.7353 27.4817C67.5092 28.2241 68.7637 28.2241 69.5374 27.4817L82.1469 15.3828ZM0.5 15.9396L80.7458 15.9396V12.1373L0.5 12.1373V15.9396Z"
-                  fill="var(--acento-az)"
-                />
-              </svg>
-              <h2>¿Por qué unirte?</h2>
-              <div class="divisor" style="background-image: url(images/divisor-az.svg);"></div>
-            </div>
-            <h3>
-              Hay múltiples razones por las que nuestro servidor podría
-              interesarte:
-            </h3>
-          </div>
-        </div>
-
-        <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
-
-          <div class="flex flex-column gap" style="gap: 0rem;">
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
-                <h4>como espacios de encuentro</h4>
-              </div>
-            </div>
-            <div
-              class="text-container background-size" style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;"
-            >
-              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
-            </div>
-          </div>
-          <p>Podés unirte a una mesa y charlar con otros miembros sobre neurociencia, diseño gráfico o cualquier otro tema. 
-            ¡Es como estar en una conferencia, pero desde la comodidad de tu casa!</p>
-         </div>
-
-         <div class="flex flex-column gap" style="gap: 0rem;">
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
-                <h4>como piezas de un rompecabezas</h4>
-              </div>
-            </div>
-            <div
-              class="text-container background-size" style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;"
-            >
-              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
-            </div>
-          </div>
-          <p>Los roles no sólo son etiquetas; éstos son la base para crear una comunidad diversa, personalizando tu experiencia y dándote la opción de elegir cómo te desenvolvés en el servidor.</p>
-         </div>
-
-         <div class="flex flex-column gap" style="gap: 0rem;">
-          <div class="text-container">
-            <div class="flex justify-space-between flex-row">
-              <div class="text-badge" style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
-                <h4>como habitaciones temáticas</h4>
-              </div>
-            </div>
-            <div
-              class="text-container background-size" style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;"
-            >
-              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
-            </div>
-          </div>
-          <p>Tenemos canales para todo: desde charlas informales hasta debates extenuantes. Además, nuestros foros estructuran las conversaciones, lo que facilita encontrar información relevante.</p>
-         </div>
-
-        </div>
-      </section>
-
-      <section class="cuarta background-size">
-        <div class="grid-container">
-          <div class="flex flex-column justify-content-left">
-            <div class="flex flex-row justify-content-left align-flex-end" style="gap: 0.625rem;">
-              <svg width="30" height="23" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg" class=" flecha-form">
-                <path d="M16.4961 0.220431L15.9595 0.664193C15.6038 0.958326 15.6038 1.43523 15.9595 1.72941L29.506 12.9329H0.98005C0.477117 12.9329 0.0693359 13.2701 0.0693359 13.6861V14.3138C0.0693359 14.7297 0.477117 15.067 0.98005 15.067H29.506L15.9595 26.2705C15.6038 26.5646 15.6038 27.0415 15.9595 27.3356L16.4961 27.7794C16.8518 28.0735 17.4284 28.0735 17.784 27.7794L33.8014 14.5326C34.157 14.2385 34.157 13.7616 33.8014 13.4674L17.784 0.220649C17.4284 -0.0735496 16.8518 -0.0737676 16.4961 0.220431Z" fill="#1D1D1D"/>
-                </svg>
-                
-            <h2 style="text-transform:uppercase; margin:0 !important;">Unite ahora</h2>
-            
-          </div>
-          <h3>¿Qué estás esperando?</h3>
-
-          </div>
-          <form
-            id="formulario"
-            action="#"
-            class="text-container"
-            style="padding: 1rem; gap: 1rem;"
-          >
-            <div class="input-container flex justify-space-between flex-row">
-              <input
-                type="text"
-                id="ingresa-nombre"
-                name="name"
-                placeholder="Nombre"
-                pattern="[^' ']+[A-Za-z]{3,12}"
-                title="Se requieren al menos 4 caracteres y no se permiten espacios."
-                required
-              />
-            </div>
-            <div class="input-container flex justify-space-between flex-row">
-              <input
-                type="email"
-                id="ingresa-mail"
-                name="email"
-                placeholder="Correo electrónico"
-                required
-              />
-            </div>
-
-            <div class="flex align-flex-end flex-row">
-            <label for="interests" class="prioridad-fill" style="inline-size: -moz-fit-content; inline-size: fit-content; ">Mis intereses</label>
-            <div class="divisor" style="margin: 0;
-            flex-shrink: 1;
-            flex-grow: 1; background-image: url(images/divisor-form.svg);"></div>
-            </div>
-
-            <div
-              class="flex justify-space-between align-items-center"
-              style="flex-wrap: wrap"
-            >
-            <div class="flex justify-content-left flex-column">
-            <div class="flex align-items-center">
-              <input type="checkbox" name="podcasts" value="Podcasts" id="check-1"/>
-              <label for="podcasts">Podcasts</label>
-            </div>
-            <div class="flex align-items-center">
-              <input type="checkbox" name="tienda" value="Tienda" id="check-2"/>
-              <label for="tienda">Tienda</label>
-            </div>
-            </div>
-
-            <div class="flex justify-content-left flex-column">
-              <div class="flex align-items-center">
-                <input
-                  type="checkbox"
-                  name="experimentos"
-                  value="Experimentos"
-                  id="check-3"/>
-                <label for="experimentos">Experimentos</label>
-              </div>
-              <div class="flex align-items-center">
-                <input type="checkbox" name="libros" value="Libros" id="check-4"/>
-                <label for="libros">Libros</label>
-              </div>
-            </div>
-            
-            <div class="flex justify-content-left flex-column">
-            <div class="flex align-items-center text-left">
-              <input type="checkbox" name="articulos" value="Artículos" id="check-5"/>
-              <label for="articulos">Artículos</label>
-            </div>
-              <div class="flex align-items-center text-left">
-                <input type="checkbox" name="todo" value="Todo" id="check-6"/>
-                <label for="todo">¡Todo!</label>
-              </div>
-            </div>
-            </div>
-            <button
-              type="submit"
-              class="btn btn-az"
-              id="btn-form hasta-aca"
-              onclick="openModal('modal-1')"
-            >
-            ¡Añádanme al bendito Discord!
-            </button>
-          </form>
-
-          <!-- FEEDBACK -->
-          <div id="modal-1" class="jw-modal">
-            <div class="jw-modal-body" style="overflow: hidden;">
-              <div class="flex intro-container flex-column" style="margin:0">
-                <div class="flex prioridad-fill flex-column">
-                  <div class="align-flex-end flex flex-row gracias-mobile flex-column">
-                    <h2 style="padding-left: 0 !important;">¡Gracias, <span id="nombre-feedback"></span>!</h2>
-                    <div class="divisor" style="background-image: url(images/divisor-feedback.svg);"></div>
-                  </div>
-                  <h3 class="prioridad-fill">
-                    Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span> Pronto te enviaremos un enlace al e-mail que registraste (<span id="mail-feedback"></span>)  a través del cual podrás entrar al servidor.
-                  </h3>
-                  <h3 class="flex prioridad-fill">
-                    ¡Esperamos que tu experiencia sea grata!
-                  </h3>
-                  <div class="grid-container" style="margin:0; gap: 0px !important;     justify-items: center; align-content: center;
-    align-items: center; height: 100px;">
-                    <img src="images/logo-completo.svg" alt="Nyan Cat" class="none-mobile" style="
-                    max-width: 50%;
-                    max-height: 50%;
-                    grid-column-end: 2; grid-column-start: 1;"/>
-                  <img src="images/nyan-cat.gif" alt="Nyan Cat" style="transform: scaleX(-1); max-width:125%; max-height:125%; grid-column-end: 3; grid-column-start: 2; z-index: 0;" class="none-mobile" />
-                </div>
-      
-                </div>
-              <button onclick="closeModal()" id="btn-cerrar" class="btn btn-ro text-container" style="z-index: 1;">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="social-media-container none-mobile flex-row">
-          <a
-            href="https://instagram.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/instagram.svg" alt="Instagram" />
-          </a>
-
-          <a
-            href="https://twitch.tv/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/twitch.svg" alt="Twitch" />
-          </a>
-
-          <a
-            href="https://youtube.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/youtube.svg" alt="YouTube" />
-          </a>
-
-          <a
-            href="https://twitter.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/twitter.svg" alt="Twitter" />
-          </a>
-
-          <a
-            href="https://facebook.com/elgatoylacaja/"
-            target="_blank"
-            class="flex"
-          >
-            <img src="icons/facebook.svg" alt="Facebook" />
-          </a>
+          <h3>
+            Te esperan muchísimos canales de voz, roles personalizados y foros.
+          </h3>
         </div>
       </div>
 
-      <div
-        class="flex justify-space-between flex-row"
-        style="
+      <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
+
+        <div class="flex flex-column gap" style="gap: 0rem;">
+          <div class="text-container">
+            <div class="flex justify-space-between flex-row">
+              <div class="text-badge"
+                style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
+                <h4 class="titulos-item">como espacios de encuentro</h4>
+              </div>
+            </div>
+            <div class="text-container background-size"
+              style="background-image: url(images/roles.png); border-radius: 0 0 0 0 !important;">
+              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
+            </div>
+          </div>
+          <p>Podés unirte a una mesa y charlar con otros miembros sobre neurociencia, diseño gráfico o cualquier otro
+            tema.
+            ¡Es como estar en una conferencia, pero desde la comodidad de tu casa!</p>
+        </div>
+
+        <div class="flex flex-column gap" style="gap: 0rem;">
+          <div class="text-container">
+            <div class="flex justify-space-between flex-row">
+              <div class="text-badge"
+                style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
+                <h4 class="titulos-item">como piezas de un rompecabezas</h4>
+              </div>
+            </div>
+            <div class="text-container background-size"
+              style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;">
+              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
+            </div>
+          </div>
+          <p>Los roles no sólo son etiquetas; éstos son la base para crear una comunidad diversa, personalizando tu
+            experiencia y dándote la opción de elegir cómo te desenvolvés en el servidor.</p>
+        </div>
+
+        <div class="flex flex-column gap" style="gap: 0rem;">
+          <div class="text-container">
+            <div class="flex justify-space-between flex-row">
+              <div class="text-badge"
+                style="justify-content: center; border-radius: 0.3125rem 0.3125rem 0 0; flex-shrink: 1;">
+                <h4 class="titulos-item">como enclaves temáticos</h4>
+              </div>
+            </div>
+            <div class="text-container background-size"
+              style="background-image: url(images/como-1.jpg); border-radius: 0 0 0 0 !important;">
+              <p style="visibility: hidden;">Accedé a contenido exclusivo para adscriptos.</p>
+            </div>
+          </div>
+          <p>Tenemos canales para todo: desde charlas informales hasta debates extenuantes. Además, nuestros foros
+            estructuran las conversaciones, lo que facilita encontrar información relevante.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cuarta background-size">
+      <div class="grid-container">
+        <div class="flex flex-column justify-content-left">
+          <div class="flex flex-row justify-content-left align-flex-end" style="gap: 0.625rem;">
+            <svg width="30" height="23" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class=" flecha-form">
+              <path
+                d="M16.4961 0.220431L15.9595 0.664193C15.6038 0.958326 15.6038 1.43523 15.9595 1.72941L29.506 12.9329H0.98005C0.477117 12.9329 0.0693359 13.2701 0.0693359 13.6861V14.3138C0.0693359 14.7297 0.477117 15.067 0.98005 15.067H29.506L15.9595 26.2705C15.6038 26.5646 15.6038 27.0415 15.9595 27.3356L16.4961 27.7794C16.8518 28.0735 17.4284 28.0735 17.784 27.7794L33.8014 14.5326C34.157 14.2385 34.157 13.7616 33.8014 13.4674L17.784 0.220649C17.4284 -0.0735496 16.8518 -0.0737676 16.4961 0.220431Z"
+                fill="#1D1D1D" />
+            </svg>
+
+            <h2 style="text-transform:uppercase; margin:0 !important;">Unite ahora</h2>
+
+          </div>
+          <h3>¿Qué estás esperando?</h3>
+
+        </div>
+        <form id="formulario" action="#" class="text-container" style="padding: 1rem; gap: 1rem;">
+          <div class="input-container flex justify-space-between flex-row">
+            <input type="text" id="ingresa-nombre" name="name" placeholder="Nombre" pattern="[^' ']+[A-Za-z]{3,12}"
+              title="Se requieren al menos 4 caracteres y no se permiten espacios." required />
+          </div>
+          <div class="input-container flex justify-space-between flex-row">
+            <input type="email" id="ingresa-mail" name="email" placeholder="Correo electrónico" required />
+          </div>
+
+          <div class="flex align-flex-end flex-row">
+            <label for="interests" class="prioridad-fill"
+              style="inline-size: -moz-fit-content; inline-size: fit-content; ">Mis intereses</label>
+            <div class="divisor" style="margin: 0;
+            flex-shrink: 1;
+            flex-grow: 1; background-image: url(images/divisor-form.svg);"></div>
+          </div>
+
+          <div class="flex justify-space-between align-items-center" style="flex-wrap: wrap">
+            <div class="flex justify-content-left flex-column">
+              <div class="flex align-items-center">
+                <input type="checkbox" name="podcasts" value="Podcasts" id="check-1" />
+                <label for="podcasts">Podcasts</label>
+              </div>
+              <div class="flex align-items-center">
+                <input type="checkbox" name="tienda" value="Tienda" id="check-2" />
+                <label for="tienda">Tienda</label>
+              </div>
+            </div>
+
+            <div class="flex justify-content-left flex-column">
+              <div class="flex align-items-center">
+                <input type="checkbox" name="experimentos" value="Experimentos" id="check-3" />
+                <label for="experimentos">Experimentos</label>
+              </div>
+              <div class="flex align-items-center">
+                <input type="checkbox" name="libros" value="Libros" id="check-4" />
+                <label for="libros">Libros</label>
+              </div>
+            </div>
+
+            <div class="flex justify-content-left flex-column">
+              <div class="flex align-items-center text-left">
+                <input type="checkbox" name="articulos" value="Artículos" id="check-5" />
+                <label for="articulos">Artículos</label>
+              </div>
+              <div class="flex align-items-center text-left">
+                <input type="checkbox" name="todo" value="Todo" id="check-6" />
+                <label for="todo">¡Todo!</label>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-az" id="btn-form hasta-aca">
+            ¡Añádanme al bendito Discord!
+          </button>
+        </form>
+
+        <!-- FEEDBACK -->
+        <div id="modal" class="jw-modal">
+          <div class="jw-modal-body" style="overflow: hidden;">
+            <div class="flex intro-container flex-column" style="margin:0">
+              <div class="flex prioridad-fill flex-column">
+                <div class="align-flex-end flex flex-row gracias-mobile flex-column">
+                  <h2 style="padding-left: 0 !important;">¡Gracias, <span id="nombre-feedback"></span>!</h2>
+                  <div class="divisor" style="background-image: url(images/divisor-feedback.svg);"></div>
+                </div>
+                <h3 class="prioridad-fill">
+                  Nos alegra mucho que te hayas unido a nuestra comunidad de <span class="discord">Discord.</span>
+                  Pronto te enviaremos un enlace al e-mail que registraste (<span id="mail-feedback"></span>) a través
+                  del cual podrás entrar al servidor.
+                </h3>
+                <h3 class="flex prioridad-fill">
+                  ¡Esperamos que tu experiencia sea grata!
+                </h3>
+                <div class="grid-container" style="margin:0; gap: 0px !important;     justify-items: center; align-content: center;
+    align-items: center; height: 100px;">
+                  <img src="images/logo-completo.svg" alt="Nyan Cat" class="none-mobile" style="
+                    max-width: 50%;
+                    max-height: 50%;
+                    grid-column-end: 2; grid-column-start: 1;" />
+                  <img src="images/nyan-cat.gif" alt="Nyan Cat"
+                    style="transform: scaleX(-1); max-width:125%; max-height:125%; grid-column-end: 3; grid-column-start: 2; z-index: 0;"
+                    class="none-mobile" />
+                </div>
+
+              </div>
+              <button id="btn-cerrar" class="btn btn-ro text-container" style="z-index: 1;">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="social-media-container none-mobile flex-row">
+        <a href="https://instagram.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/instagram.svg" alt="Instagram" />
+        </a>
+
+        <a href="https://twitch.tv/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/twitch.svg" alt="Twitch" />
+        </a>
+
+        <a href="https://youtube.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/youtube.svg" alt="YouTube" />
+        </a>
+
+        <a href="https://twitter.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/twitter.svg" alt="Twitter" />
+        </a>
+
+        <a href="https://facebook.com/elgatoylacaja/" target="_blank" class="flex">
+          <img src="icons/facebook.svg" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-space-between flex-row" style="
           border-top: 1px solid;
           stroke: #e5e7eb;
           gap: 2.5rem;
           padding-top: 1.5rem;
-        "
-      >
-        <a href="#" class="flex justify-content-center align-items-center">
-          <img src="images/logo-completo.svg" alt="Logo: El Gato y la Caja" />
-        </a>
-        <p class="flex justify-content-center align-items-center none-mobile">
-          &copy; 2024 El Gato y la Caja. Todos los derechos reservados.
-        </p>
-        <a href="#" class="flex justify-content-center align-items-center">
-          <img src="images/lema.svg" alt="Lema: Ciencia + Diseño" />
-        </a>
-      </div>
-      <p class="flex justify-content-center align-items-center none-desktop">
+        ">
+      <a href="#" class="flex justify-content-center align-items-center">
+        <img src="images/logo-completo.svg" alt="Logo: El Gato y la Caja" />
+      </a>
+      <p class="flex justify-content-center align-items-center none-mobile">
         &copy; 2024 El Gato y la Caja. Todos los derechos reservados.
       </p>
-    </footer>
-    <script src="index.js"></script>
-    <script src="js/index.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            
-            direction: 'horizontal',
-
-
-
-           
-            scrollbar: { enabled: false },
-
-           
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            
-            breakpoints: {
-          
-
-                200: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                1200: {
-                    slidesPerView: 2,
-                    spaceBetween: 35,
-
-                }
-            },
-            
-            navigation: { enabled: false }
-        });
-    </script>
-  </body>
+      <a href="#" class="flex justify-content-center align-items-center">
+        <img src="images/lema.svg" alt="Lema: Ciencia + Diseño" />
+      </a>
+    </div>
+    <p class="flex justify-content-center align-items-center none-desktop">
+      &copy; 2024 El Gato y la Caja. Todos los derechos reservados.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
 </html>
