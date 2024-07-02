@@ -1,4 +1,4 @@
-/* Navigation bar */
+/* Barra de navegación */
 #main-nav .social{
   display: none;
 }
@@ -14,7 +14,7 @@
   padding: 0.5rem;
 }
 
-/* Articles */
+/* Artículos */
 #home-articles .articles-container{
   grid-template-columns: repeat(2, 1fr);
 }
@@ -28,7 +28,7 @@
 }
 
 @media(max-width: 600px){
-  /* Articles Grid */
+  /* Grilla de artículos */
   #showcase .showcase-container,
   #home-articles .articles-container,
   #main-footer .footer-container{
@@ -40,10 +40,12 @@
   }
   #main-footer .footer-container > *:first-child,
   #main-footer .footer-container > *:nth-child(2){
-    border-bottom: #444 dotted 1px;
     padding-bottom: 1rem;
   }
-  /* About and Article Page */
+  .list li{
+    width: 100% !important;
+  }
+  /* Artículo */
   .page-container{
     grid-template-columns: 1fr;
   }
