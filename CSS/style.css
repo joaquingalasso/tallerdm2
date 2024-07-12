@@ -19,7 +19,7 @@
 body{
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  background: var(--light-color);
+  background: #FFF;
 }
 a{
   color: var(--dark-color);
@@ -94,12 +94,12 @@ h1,h3,h4,h5,h6{
 }
 .card {
   background: #fff;
-  padding: 1rem;
+  /*padding: 1rem; */
   display: flex;
   flex-direction: column;
 }
 
-#otras-noticias h3 {
+h3 {
 flex-grow: 1;
 margin-top: .50rem;
 }
@@ -116,6 +116,11 @@ margin-top: .50rem;
 .articles-container .card p{
   font-size: 0.65rem !important;
 }
+
+aside p{
+  font-size: 0.65rem !important;
+}
+
 .bg-dark{
   background: var(--dark-color);
   color: #fff;
@@ -202,7 +207,7 @@ text-align: center !important;
   grid-gap: 1.5rem;
 }
 .page-container > *:first-child{
-  grid-row: 1 / span 3;
+  grid-row: 2 / span 3;
 }
 .l-heading{
   font-size: 2rem;
@@ -313,6 +318,16 @@ input[type=text]:focus {
   width: 2rem;
 }
 
+#article .social{
+  margin-left: 1rem;
+  justify-self: left;
+}
+#article .social img{
+  color: #777;
+  margin-left: 0.2rem;
+  width: 2rem;
+}
+
 
 /* Showcase */
 #showcase{
@@ -389,7 +404,7 @@ input[type=text]:focus {
 }
 #main-footer .footer-container > *:last-child{
   background: #444;
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 2;
   padding: 0.5rem;
   text-align: center;
   font-size: 0.8rem;
