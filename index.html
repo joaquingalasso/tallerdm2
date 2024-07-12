@@ -31,10 +31,33 @@
         <a href="https://www.instagram.com/elmundotoday/" target = 'blank'><img src="img/icons/instagram.png" alt="Instagram"></i></a>
         <a href="https://www.youtube.com/user/ElMundoToday" target = 'blank'><img src="img/icons/youtube.png" alt="YouTube"></i></a>
       </div>
-      <ul>
-        <li><a href="inicio.html" >INICIO</a></li>
+
+        <div class = 'atajos'>
+          <ul>
+          <li><a href="#"><img src="img/icons/tienda.png" alt="Ícono de tienda">Tienda</a></li>
+          <li><a href="#"><img src="img/icons/moderar.png" alt="Ícono de moderar"></i>Moderar</a></li>
+          <li><a href="#"><img src="img/icons/crear.png" alt="Ícono de crear"></i>Crear</a></li>
+          <li><a href="#" style="border-right: none"><img src="img/icons/perfil.png" alt="Foto de perfil"></i></a></li>
+        </ul>
+        </div>
+      
+    </div>
+    <div id="fila2" class="container">
+      <ul style="margin-right: auto; gap: 1rem;">
+        <li><a href="index.html">INICIO</a></li>
         <li><a href="index.html" class="current">NOTAS</a></li>
+        <li><a href="index.html">VÍDEOS</a></li>
+        <li><a href="index.html">PODCASTS</a></li>
+        <li><a href="index.html">ENTREVISTAS</a></li>
       </ul>
+      <ul style="">
+      <li><input
+      type="search"
+      id="mySearch"
+      name="q"
+      placeholder="Buscar…" /></li>
+      <li><button><img src="img/icons/buscar.png" alt="Ícono de crear"></i></button></li>
+    </ul>
     </div>
   </nav>
 
@@ -45,6 +68,9 @@
       <div class="page-container">
         <article class="card">
           <img src="img/articulos/noticia.png" alt="article">
+          <p>
+            <em>Propietario agobiado por todo el "hate" que está recibiendo.</em>
+          </p>
           <div class="meta">
             <small>
               Por <b>Redacción</b><img src="img/icon.png" alt="logo">
@@ -63,15 +89,17 @@
         </article>
         <aside id="categories" class="card">
           <h2>ETIQUETAS</h2>
-          <ul class="list">
-            <li><a href="#"><i class="fas fa-chevron-right"></i>vivienda</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i>alquiler</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i>alquiler turístico</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i>brand content</a></li>
+          <ul class="tags">
+            <li><a href="#">vivienda</a></li>
+            <li><a href="#">alquiler</a></li>
+            <li><a href="#">alquiler turístico</a></li>
+            <li><a href="#">brand content</a></li>
+            <li><a href="#">crimen de odio</a></li>
+            <li><a href="#">odio</a></li>
           </ul>
         </aside>
         <aside class="card bg-secondary">
-          <h2>¿HABEÍS HECHO LA TAREA?</h2>
+          <h2>¿HABÉIS HECHO LA TAREA?</h2>
           <p>EMPIEZA A MODERAR AHORA... <br> SI US PLAU 🥺</p>
           <a href="#" class='btn btn-dak btn-block'>Regístrate ahora</a>
         </aside>
@@ -82,7 +110,7 @@
   <section id="home-articles" class="py-2">
     <div class="container">
       <h2 style="border-bottom: #555 dotted 1px; padding-bottom:1rem; margin-bottom:2rem">Otras noticias</h2>
-      <div class="articles-container">
+      <div class="articles-container" id="otras-noticias">
         
         <article class="card">     
           <div class="category categoria-vivienda">
