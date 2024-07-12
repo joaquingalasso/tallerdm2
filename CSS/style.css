@@ -223,11 +223,34 @@ text-align: center !important;
 }
 
 #fila2 {
-  grid-template-columns: 8fr 4fr !important;
+  grid-template-columns: 5fr 5fr !important;
   gap: 1rem;
-  height: 3.5rem;
+  height: 3.7rem;
   border-radius: 0;
   border-bottom: #868787 solid 1px;
+}
+
+#fila2 input, button {
+  border:none;
+  background:none;
+}
+
+#fila2 button {
+  cursor:pointer;
+}
+
+#fila2 input {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+#buscador {
+  align-self: baseline;
+}
+
+
+input[type=text]:focus {
+  outline: none;
 }
 
 .atajos img {
